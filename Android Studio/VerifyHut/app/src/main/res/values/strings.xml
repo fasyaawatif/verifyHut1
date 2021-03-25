@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">VerifyHut</string>
+    <string name="app_category">Product Categories</string>
+
+    <string name="menu_home" />
+    <string name="search_your_product">Search Your Products...</string>
+
+    <string name="logout">Logout</string>
+    <string-array name="typeProduct">
+        <item>--Choose Product Type--</item>
+        <item>Drink/Beverages</item>
+        <item>Bread</item>
+        <item>Snacks/Sweets</item>
+        <item>Canned Food</item>
+        <item>Frozen Goods</item>
+        <item>Sauces/Spices</item>
+        <item>Cosmetics</item>
+        <item>Supplementary Food</item>
+    </string-array>
+    <string-array name="typeManufacturer">
+        <item>--Manufacturer Type--</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+    <string name="search">Search</string>
+    <string name="type_name">Product Name</string>
+</resources>

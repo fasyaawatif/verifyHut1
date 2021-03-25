@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Product Record"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.143" />
+
+        <EditText
+            android:id="@+id/prdID"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:background="@color/cardview_light_background"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Barcode Number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.217" />
+
+        <EditText
+            android:id="@+id/prdName"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Product Name"
+            android:inputType="textPersonName"
+            android:background="@color/cardview_light_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prdID"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <EditText
+            android:id="@+id/prdBrand"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Brand"
+            android:inputType="textPersonName"
+            android:background="@color/cardview_light_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prdName"
+            app:layout_constraintVertical_bias="0.029" />
+
+        <EditText
+            android:id="@+id/prdDesc"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:background="@color/cardview_light_background"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prdBrand"
+            app:layout_constraintVertical_bias="0.048" />
+
+        <EditText
+            android:id="@+id/prdIngredient"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/cardview_light_background"
+            android:ems="10"
+            android:hint="Ingredient"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prdType" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prdDesc"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <Spinner
+            android:id="@+id/prdType"
+            android:entries="@array/typeProduct"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:background="@color/cardview_light_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/prdHalal"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Halal Reference Number"
+            android:inputType="textPersonName"
+            android:background="@color/cardview_light_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prdIngredient" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
